@@ -1,50 +1,31 @@
-// grid da página
 
 *{
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
- 
+  
 }
 
-.parent {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(9, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  }
-
-.parent-nav{
-  grid-area: 1 / 1 / 6 / 2;
-}
-
-.parent-header{
-  grid-area: 1 / 2 / 2 / 6;
-}
-
-.parent-video{
-  grid-area: 2 / 2 / 6 / 5;
+body{
   position: relative;
-  top: -280px;
+  top: -8px;
+  left: -8px;
 }
 
-.parent-main{
-  grid-area: 4 / 2 / 6 / 6;
-}
-
-.parent-aside{
-  grid-area: 2 / 5 / 6 / 6;
-}
 
 // Estilização do header
 
 header{
-  // width: 71.625rem;
-  display: flex;
-  justify-content: space-between;
   font-weight: 400;
-  
+  max-height: 4.21rem;
+}
+
+header div:first-child {
+  display: flex;
+  justify-content: space-around;
+  background-color: #FDF1EB;
+  height: 68px;
+  align-items: center;
 }
 
 ul{
@@ -118,6 +99,7 @@ ul{
 nav {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   border-right: 1px solid #f1f1f1;
   font-weight: 500;
   font-size: 0.938rem;
@@ -144,56 +126,320 @@ nav li:hover{
   border-left: 5px solid orange;
 }
 
-//Estilização do Main
-
-.main-analise h2{
-  font-weight: 900;
-  font-size: 1.25rem;
-  color: #ED7839;
-
-}
-
-.main-analise iframe{
-  margin-top: 1.25rem;
-}
-
-.main-analise h3{
-  margin: 2.5rem 0 1.875rem 0;
+.flex-nav{
+  display: flex;
   
 }
 
-.main-discussoes{
+//Estilização do Video
+
+.video{
   display: flex;
+  margin: 2rem 0 0 2rem;
   flex-direction: column;
 }
 
-.main-discussoes h3:first-child {
-  margin: 3.125rem 0 1.875rem 0;
-}
-
-.main-discussoes h4{
-  text-align: center;
-  color: #ED7839;
-  font-weight: 700;
-}
-
-.main-discussoes-div-flex{
+.div-butoes{
   display: flex;
-  justify-content: center;
-  margin: 1.875rem 0 1.875rem 0;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  position: relative;
+  right: 260px;
+  top: -50px;
 }
 
-.main-discussoes-div-flex img:nth-child(2){
-  padding: 0 3.125rem 0 3.125rem;
+.div-butoes button{
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+
+.video-posicao{
+  position: relative;
+  top: -50px;
+}
+
+.video h3{
+  text-align: end;
+  margin: 1rem 4rem 1rem 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ED7839;
+  position: relative;
+  top: -50px;
+  right: 233px;
+}
+
+
+.video h2{
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: #ED7839;
+  width: 60%;
+
+ }
+
+ .video button{
+  background-color: #ED7839;
+  height: 1.938rem;
+  border: 1px solid #ED7839;
+  border-radius: 5px;
+ }
+
+ .video div button:nth-child(1){
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: #FFFFFF;
+ }
+
+ .video div button:nth-child(2){
+  width: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .video div button:nth-child(3){
+  width: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .div-butoes span{
+  font-weight: 700;
+ }
+
+// Estlilizaçãoa aside
+
+aside{
+  position: relative;
+  left: 820px;
+  top: -444px;
+  width: 242px;
+  border: 1px solid #ECECEC;
+  border-radius: 5px;
+  height: 439px;
+  overflow: scroll;
   
 }
 
-.main-discussoes p{
-  font-weight: 400;
-  font-size: 14px;
-  text-align: center;
+.aside h2 {
+  color: #725c5c;
+  font-size: 18px;
+  margin-bottom: 2rem;
+  background-color: #fdf1eb;
+  width: 94%;
+  border-radius: 5px 5px 0 0;
+  padding: 1rem 0 1rem 1rem;
 }
 
-.main-discussoes button{
-  width: 250px;
+.aside span {
+  color: #725c5c;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.aside p {
+  color: #5c5c5c;
+  font-size: 12px;
+  margin-bottom: 0.3rem;
+  padding-left: 1rem;
+}
+
+.aside h4 {
+  margin-top: 1.6rem;
+  color: #725c5c;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+.lista-de-autores p{
+  font-size: 12px;
+}
+
+.lista-de-universidades{
+  font-size: 8px;
+  margin-top: 2rem;
+
+}
+
+.lista-de-universidades p{
+  color: #c6c6c6;
+}
+
+//estilização do main
+
+.main{
+  position: relative;
+  top: 100px;
+  left: 253px;
+  width: 1058px;
+  margin-top: 1.5rem;
+}
+
+.main-resumo h3{
+  background-color: #fdf1eb;
+  padding: 1rem;
+  color: #4E4E4E;
+  border-bottom: 1px solid #ECECEC;
+  border-radius: 5px 5px 0 0;
+}
+
+.main-resumo{
+  border: 1px solid #ECECEC;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.main-resumo p {
+  padding: 1rem;
+  color: #5c5c5c;
+  font-size: 14px;
+}
+
+.main-discussoes{
+  border: 1px solid #ECECEC;
+  border-radius: 5px 5px 0 0;
+}
+
+#discussoes{
+  color: #4E4E4E;
+  background-color: #fdf1eb;
+  padding: 1rem;
+  border-bottom: #ECECEC;
+}
+
+.main-discussoes h4{
+  color: #ED7839;
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+}
+
+.main-discussoes-imagens{
+  display: flex;
+  justify-content: center;
+  border: none;
+ 
+}
+
+.main-discussoes-imagens img:nth-child(2){
+  padding: 0 3rem 0 3rem;
+}
+
+.main-discussoes-criar-topico p {
+  text-align: center;
+  font-size: 14px;
+  width: 626px;
+}
+
+.main-discussoes-criar-topico{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-discussoes-criar-topico button{
+  width: 133px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#FEB254, #ED7839);
+  border: 1px solid #FEB254;
+  border-radius: 5px;
+  color:#FFFFFF;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.main-discussoes-criar-topico p {
+  color: #5c5c5c;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.main-discussoes-criar-topico img {
+  padding-right: 0.5rem;
+ 
+}
+
+// estilização topico
+
+.topico{
+  border: 1px solid #e7e7e7;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 -2px 5px 0 #e7e7e7;
+}
+
+.topico h3 {
+  font-size: 16px;
+  color: #ED7839;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.topico-nome{
+  color: #4E4E4E;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.topico p:nth-child(3) {
+  color: #4d4d4d;
+  font-size: 14px;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.topico div {
+  display: flex;
+  align-items: center;
+  height: 19px;
+  justify-content: space-between;
+  width: 165px;
+}
+
+.topico p:nth-child(4){
+  color: #4d4d4d;
+  font-size: 14px;
+}
+
+footer{
+  position: relative;
+  top: 150px;
+  left: 250px;
+  width: 1146px;
+  font-size: 14px;
+}
+
+footer span{
+  color: #4d4d4d;
+  font-weight: 600;
+}
+
+footer img {
+  padding: 1rem 2rem 0 0;
+}
+
+footer p{
+color: #5c5c5c;
+padding-top: 1rem;
+font-weight: 400;
+padding-right: 98px;
+}
+
+.footer {
+  padding: 1rem 0 2rem 0;
+  display: flex;
+}
+
+.barra-horizontal {
+  border: 1px solid #ECECEC;
+  width: 1050px;
+  position: relative;
+  left: -20px;
 }
