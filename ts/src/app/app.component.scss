@@ -300,6 +300,18 @@ aside{
   font-size: 14px;
 }
 
+.btn-show-more{
+  color: #ED7839;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  left: 170px;
+  top: -34px;
+}
+
 .main-discussoes{
   border: 1px solid #ECECEC;
   border-radius: 5px 5px 0 0;
@@ -407,6 +419,8 @@ aside{
   color: #4d4d4d;
   font-size: 14px;
 }
+
+//Estilização rodapé
 
 footer{
   position: relative;

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+import { ComponenteVerMais } from './ver-mais.component';
+import { NovoTopicoComponent } from './novo-topico.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DevChuva';
+  mostrarNovoTopico: boolean = false;
+
+  verMaisComponent = new ComponenteVerMais();
+
+  toggleFormulario(){
+    this.mostrarNovoTopico = !this.mostrarNovoTopico;
+  }
+  
 }
