@@ -117,18 +117,22 @@
         
         <div class="main-discussoes">
           <h3 id="discussoes">Discussões</h3>
-          <h4>Compartilhe suas idéias ou dúvidas com os autores!</h4>
-          <div class="main-discussoes-imagens">
-            <img src="../assets/mao.png" alt="icone de uma mão">
-            <img src="../assets/qa.png" alt="icone com as letras q e a">
-            <img src="../assets/ideia.png" alt="icone de uma lampada acima de duas pessoas">
+          <div class="remover-conteudo">
+            <h4>Compartilhe suas idéias ou dúvidas com os autores!</h4>
+            <div class="main-discussoes-imagens">
+              <img src="../assets/mao.png" alt="icone de uma mão">
+              <img src="../assets/qa.png" alt="icone com as letras q e a">
+              <img src="../assets/ideia.png" alt="icone de uma lampada acima de duas pessoas">
+            </div>
+            
+            <div class="main-discussoes-criar-topico">
+              <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+              <button class="btn-create-topic" (click)="toggleFormulario()"><img src="../assets/icon - criar.png" alt="Icone de +"> criar tópico</button>
+            </div>
+            
           </div>
+          <app-criar-topico [mostrarNovoTopico]="mostrarNovoTopico"></app-criar-topico>
           
-          <div class="main-discussoes-criar-topico">
-            <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
-            <button (click)="toggleFormulario()"><img src="../assets/icon - criar.png" alt="Icone de +"> criar tópico</button>
-          </div>
-          <app-novo-topico *ngIf="mostrarNovoTopico" (formularioToggled)="toggleFormulario()"></app-novo-topico>
 
           <div class="topico">
             <h3>Assunto da pergunta aparece aqui</h3>

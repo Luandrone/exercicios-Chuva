@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
-import { ComponenteVerMais } from './ver-mais.component';
-import { NovoTopicoComponent } from './novo-topico.component';
+import { ComponenteVerMais } from '../app/ver-mais/ver-mais.component';
+import { CriarTopicoComponent } from './criar-topico/criar-topico.component';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +9,23 @@ import { NovoTopicoComponent } from './novo-topico.component';
 })
 export class AppComponent {
   title = 'DevChuva';
+
+  verMaisComponent: ComponenteVerMais = new ComponenteVerMais();
+  
   mostrarNovoTopico: boolean = false;
 
-  verMaisComponent = new ComponenteVerMais();
-
-  toggleFormulario(){
+  toggleFormulario() {
     this.mostrarNovoTopico = !this.mostrarNovoTopico;
-  }
+
+    if (this.mostrarNovoTopico) {
+      const elemento = document.querySelector('.remover-conteudo');
+      if (elemento) {
+        elemento.remove();
+      }
+    }
+  } 
+
+  
+
   
 }

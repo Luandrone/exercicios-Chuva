@@ -1,0 +1,76 @@
+//Estilização do criando tópico
+
+h4{
+      text-align: center;
+      font-size: 14px;
+      color: #5C5C5C;
+      font-weight: 400;
+      margin-bottom: 1rem;
+}
+
+div{
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      display: flex;
+      flex-direction: column;
+}
+
+label{
+      color: #ED7839;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+}
+
+input{
+      padding: 0.5rem 0 0.5rem 1rem ;
+      border: 1px solid #CCCCCC;
+      border-radius: 2px;
+}
+
+textarea{
+      border: 1px solid #CCCCCC;
+      border-radius: 2px 2px 0 0;
+      resize: none;
+      height: 85px;
+}
+
+div:nth-child(2){
+      margin-top: 1rem;
+}
+
+div span{
+      height: 31px;
+      width: 1025px;
+      background-color: #EAF1F2;
+      
+}
+
+#botao-enviar{
+      display: flex;
+      flex-direction: row;
+      border: 1px solid #CCCCCC;;
+      border-top: none;
+      position: relative;
+      top: -1px;
+      border-radius: 0 0 2px 2px;
+}
+
+button{
+      background:linear-gradient(#FEB154, #F1833E);
+      color: #FFFFFF;
+      width: 205PX;
+      padding: 0.3rem;
+      height: 31px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+}
+
+.barra-horizontal {
+      border: 1px solid #ECECEC;
+      width: 1023px;
+      margin-top: 0.7rem;
+      margin-bottom: 0.7rem;
+}
+
+

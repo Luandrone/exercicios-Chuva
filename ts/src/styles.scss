@@ -1,1 +1,119 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+      font-family: 'Roboto', sans-serif;
+}
+
+//Estilização do novo Tópico
+
+#novo-conteudo h2{
+      text-align: center;
+      color: #ED7839;
+}
+
+#novo-conteudo p{
+      text-align: center;
+      color: #595959;
+}
+
+#novo-conteudo a {
+      text-align: center;
+}
+
+#novo-conteudo-descubra{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+#novo-conteudo-descubra a{
+      color: #ED7839;
+      padding: 0.7rem 0 2.8rem 0;
+}
+
+#novo-conteudo-descubra div{
+      display: flex;
+}
+
+#botao-novo-topico{
+      width: 235px;
+      text-align: center;
+      padding: 0.5rem 0 0.5rem 0;
+      background:linear-gradient(#FEB254, #F0813D);
+      color: #FFFFFF;
+      font-weight: 600;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+}
+
+.barra-lateral{
+      border-top: 1px solid #ececec;
+      width: 392px;
+      position: relative;
+      top: 16px;
+}
+
+
+.novo-topico{
+      
+      border-radius: 5px;
+      box-shadow: 0 -2px 5px 0 #e7e7e7;
+      padding: 1rem;
+      margin: 1rem 0.5rem 0.3rem 0.5rem;
+      background-color: #ececec;
+      filter: blur(4px);
+      border: 1px solid #e7e7e7;
+}
+    
+.novo-topico h3 {
+      font-size: 16px;
+      color: #ED7839;
+      
+}
+    
+.novo-topico-nome{
+      color: #4E4E4E;
+      font-weight: 600;
+      font-size: 12px;
+      margin: -1rem;
+      padding: 0.7rem 0 0.7rem 1rem ;
+}
+    
+.novo-topico p:nth-child(3) {
+      color: #4d4d4d;
+      font-size: 14px;
+      
+}
+    
+.novo-topico div {
+      display: flex;
+      align-items: center;
+      height: 19px;
+      justify-content: space-between;
+      width: 165px;
+}
+    
+.novo-topico p:nth-child(4){
+      color: #4d4d4d;
+      font-size: 14px;
+}
+
+//Estilização mensagem de feedback
+
+.feedback{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: -125px;
+}
+
+.feedback h2{
+      color: #707070;
+      font-size: 16px;
+      font-weight: 700;
+}
+
+.feedback a{
+      color: #ED7839;
+}

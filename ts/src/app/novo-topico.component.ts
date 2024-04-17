@@ -1,9 +1,9 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-novo-topico',
   template: `
-    <div *ngIf="mostrarNovoTopico">
+    <div>
       <h4>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h4>
       <form>
         <div>
@@ -17,18 +17,24 @@ import { Component, Output, EventEmitter } from '@angular/core';
         <button type="submit">Enviar</button>
       </form>
     </div>
-  `,
-  styleUrls: ['./app.component.scss']
+  `
 })
 export class NovoTopicoComponent {
-  @Output() formularioToggled = new EventEmitter<boolean>();
-  mostrarNovoTopico: boolean = false;
+  //mostrarNovoTopico: boolean = false;
 
-  toggleFormulario() {
-    console.log('Funcionou')
-    console.log('Valor anterior de mostrarNovoTopico:', this.mostrarNovoTopico);
-    this.mostrarNovoTopico = !this.mostrarNovoTopico;
-    console.log('Novo valor de mostrarNovoTopico:', this.mostrarNovoTopico);
-    this.formularioToggled.emit(this.mostrarNovoTopico);
+  constructor(){
+
   }
+
+  testClick(){
+    console.log('Funcionou')
+  }
+
+
+  // toggleFormulario() {
+  //   console.log('Funcionou')
+  //   console.log('Valor anterior de mostrarNovoTopico:', this.mostrarNovoTopico);
+  //   this.mostrarNovoTopico = !this.mostrarNovoTopico;
+  //   console.log('Novo valor de mostrarNovoTopico:', this.mostrarNovoTopico);
+  // }
 }

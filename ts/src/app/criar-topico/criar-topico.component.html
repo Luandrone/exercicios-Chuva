@@ -1,0 +1,19 @@
+<div class="remover-conteudo-enviar" *ngIf="mostrarNovoTopico">
+      <h4>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</h4>
+      <form>
+        <div>
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" placeholder="Defina um tópico sucinto para notificar os autores...">
+        </div>
+        <div>
+          <label for="conteudo">Conteúdo</label>
+          <textarea id="conteudo"></textarea>
+        </div>
+        <div id="botao-enviar">
+            <span></span>
+            <button type="button" (click)="enviarMensagem($event)">Enviar</button>
+        </div>
+        <div class="barra-horizontal"></div>
+        
+      </form>
+    </div>
