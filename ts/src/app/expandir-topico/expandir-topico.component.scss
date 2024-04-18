@@ -1,0 +1,66 @@
+.topico-expandido{
+      border: 1px solid #e7e7e7;
+      padding: 1rem;
+      margin: -1rem 1rem 0 1rem;
+      border-radius: 5px;
+      box-shadow: 0 -2px 5px 0 #e7e7e7;
+      background-color: #F8F8F8;
+}
+
+.topico-expandido-nome{
+      color: #5C5C5C;
+      font-size: 12px;
+      font-weight: 700;
+      position: relative;
+      right: 26rem;
+      margin: -0.5rem 0 -0.5rem 0;
+}
+
+
+.topico-expandido div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+}
+
+ .topico-expandido-resposta{
+       color: #4D4D4D;
+       font-size: 14px;
+       font-weight: 400;
+}
+
+a{
+      color: #ED7839;
+      text-decoration: none;
+      position: relative;
+      left: 370px;
+}
+
+#camila-nome{
+      position: relative;
+      left: -348px;
+}
+
+#camila-coautor{
+      padding-right: 69px;
+}
+
+#carlos-nome{
+      font-size: 12px;
+      color: #5C5C5C;
+      font-weight: 700;
+}
+
+#topico-carlos{
+      background-color: #FFFFFF;
+}
+
+img{
+      position: relative;
+      left: 402px;
+}
+
+img:nth-child(2){
+      right: 1px;
+}

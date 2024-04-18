@@ -65,8 +65,6 @@
           <button><img src="../assets/download.png" alt=""><span>Download</span></button>
           <button><img src="../assets/favoritar.png" alt=""></button>
           <button><img src="../assets/doi.png" alt=""></button>
-    
-          
         </div>
         <h3>Como citar esse trabalho?</h3>
         <div class="video-posicao">
@@ -111,7 +109,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum arcu non ligula ultricies consequat. Nam tristique, turpis ac posuere molestie, eros ligula consequat magna, eu vestibulum lacus ex a dolor. Integer consequat luctus eros, nec convallis libero. Ut vel sollicitudin nunc. Mauris nec justo nec velit vestibulum tempor. Nulla facilisi. Donec maximus, nisi id viverra facilisis, dui est dignissim quam, sed accumsan leo metus nec est. Sed fringilla tempor dolor, vel fringilla lacus cursus sit amet. Quisque eu magna vitae neque malesuada facilisis a id metus. Integer ultricies hendrerit nisi, at posuere velit mollis sed. Integer fermentum lorem ut lorem tincidunt, ac egestas magna volutpat. Vivamus ultrices, nulla ut pellentesque hendrerit, arcu mi cursus elit, vel tristique mi lorem vitae odio. Suspendisse fringilla orci nec sem elementum, nec tempus ex pulvinar. Phasellus vestibulum tincidunt massa, in fermentum erat fermentum ut. Curabitur eu dolor ut quam ullamcorper elementum.</p>
           <div>
             <p *ngIf="verMaisComponent.isExpanded">{{ verMaisComponent.longText }}</p>
-            <button class="btn-show-more" (click) ="verMaisComponent.toggleExpand()">{{ verMaisComponent.isExpanded ? 'Recolher' : 'vermais' }}</button>
+            <button class="btn-ver-mais btn-show-more" (click) ="verMaisComponent.toggleExpand()">{{ verMaisComponent.isExpanded ? 'Recolher' : 'ver mais' }}</button>
           </div>
         </div>
         
@@ -134,8 +132,8 @@
           <app-criar-topico [mostrarNovoTopico]="mostrarNovoTopico"></app-criar-topico>
           
 
-          <div class="topico">
-            <h3>Assunto da pergunta aparece aqui</h3>
+          <div class="topico" (click)="toggleExpandirTopico()">
+            <h3 class="ops-topic-subject">Assunto da pergunta aparece aqui</h3>
             <p class="topico-nome">Carlos Henrique Santos</p>
             <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
             <div>
@@ -144,8 +142,8 @@
               <p>1 like</p>
               <p>1 resposta</p>
             </div>
-            
           </div>
+          <app-expandir-topico [expandido]="topicoExpandido" *ngIf="topicoExpandido" ></app-expandir-topico>
   
           <div class="topico">
             <h3>Assunto da pergunta aparece aqui</h3>
@@ -177,6 +175,7 @@
     
     
   </footer>
+  
 </body>
 
 </html>

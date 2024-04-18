@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 import { ComponenteVerMais } from '../app/ver-mais/ver-mais.component';
-import { CriarTopicoComponent } from './criar-topico/criar-topico.component';
+
 
 @Component({
   selector: 'app-root',
@@ -25,7 +25,10 @@ export class AppComponent {
     }
   } 
 
-  
+  topicoExpandido: boolean = false;
 
+  toggleExpandirTopico(): void {
+    this.topicoExpandido = !this.topicoExpandido;
+  }
   
 }

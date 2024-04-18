@@ -105,6 +105,7 @@ nav {
   font-weight: 500;
   font-size: 0.938rem;
   width: 13.75rem;
+  box-shadow: 0 -2px 10px 0 #e7e7e7;
 }
 
 nav li {
@@ -145,7 +146,7 @@ nav li:hover{
   justify-content: flex-end;
   margin-right: 2rem;
   position: relative;
-  right: 260px;
+  right: 13px;
   top: -50px;
 }
 
@@ -163,11 +164,11 @@ nav li:hover{
   text-align: end;
   margin: 1rem 4rem 1rem 0;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: #ED7839;
   position: relative;
   top: -50px;
-  right: 233px;
+  line-height: 25px;
 }
 
 
@@ -175,7 +176,7 @@ nav li:hover{
   font-weight: 900;
   font-size: 1.25rem;
   color: #ED7839;
-  width: 60%;
+  width: 768px;
 
  }
 
@@ -293,6 +294,7 @@ aside{
   border: 1px solid #ECECEC;
   border-radius: 5px;
   margin-bottom: 2rem;
+  margin-top: 3rem;
 }
 
 .main-resumo p {
@@ -376,6 +378,7 @@ aside{
   margin: 1rem;
   border-radius: 5px;
   box-shadow: 0 -2px 5px 0 #e7e7e7;
+  cursor: pointer;
 }
 
 .topico h3 {
