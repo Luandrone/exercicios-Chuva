@@ -109,8 +109,8 @@ nav {
 }
 
 nav li {
-  margin-left: 1.5rem;
-  
+  padding-left: 1.5rem;
+  border-bottom: 1px solid #e7e7e7;
   height: 2.188rem;
   
 }
@@ -224,7 +224,7 @@ aside{
   border: 1px solid #ECECEC;
   border-radius: 5px;
   height: 439px;
-  overflow: scroll;
+  // overflow: scroll;
   
 }
 
