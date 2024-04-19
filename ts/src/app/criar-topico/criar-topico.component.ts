@@ -44,8 +44,8 @@ export class CriarTopicoComponent implements OnInit {
               </div>
             </div>
         </div>
-        <div class="novo-topico answered-topic">
-              <h3 class="ops-topic-subject" >Assunto da pergunta aparece aqui</h3>
+        <div class="novo-topico">
+              <h3>Assunto da pergunta aparece aqui</h3>
               <p class="novo-topico-nome">Carlos Henrique Santos</p>
               <p class="comments-container">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>    
         </div>
