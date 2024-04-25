@@ -18,4 +18,5 @@ import { ExpandirTopicoComponent } from './expandir-topico/expandir-topico.compo
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
